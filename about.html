@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<title>Welcome</title>
+<h1>Blog</h1>
+<ul>
+{%for blog in site.categories.blog-post %}
+<li>
+<a href="">{{blog.title}}</a>
+<p>{{blog.meta}}</p>
+<img src = "shashank.jpg" height = "350 px" width = "500px">
+</li>
+{% endfor %}
+</ul>
